@@ -1,5 +1,6 @@
 import { Header } from "./components";
 import "./globals.css";
+import { Provider } from "./components";
 
 export const metadata = {
   title: "Chic Movies App",
@@ -10,10 +11,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* Header */}
-        <Header />
-        {/* Navbar */}
-        {children}
+        <Provider>
+          {/* Header */}
+          <Header />
+          {/* Navbar */}
+          {children}
+        </Provider>
       </body>
     </html>
   );

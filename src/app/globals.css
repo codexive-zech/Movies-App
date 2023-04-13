@@ -16,3 +16,12 @@
   }
 }
 
+@layer base {
+  body {
+    @apply dark:bg-gray-700 dark:text-gray-200 text-gray-800 select-none transition-colors duration-300;
+  }
+
+  .dark-mode-toggle {
+    @apply text-xl hover:text-amber-500 cursor-pointer;
+  }
+}
