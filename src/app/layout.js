@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
         <Provider>
           {/* Header */}
           <Header />
-          {/* Navbar */}
+
+          {/* Movies List */}
           {children}
         </Provider>
       </body>
