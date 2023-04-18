@@ -1,6 +1,6 @@
-import { Header } from "./components";
+import { Header } from "@/components";
 import "./globals.css";
-import { Provider } from "./components";
+import { Provider } from "@/components";
 
 export const metadata = {
   title: "Chic Movies App",

@@ -1,6 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import { navItems } from "../../../utils/data";
+
+const navItems = [
+  {
+    id: 1,
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "About",
+    url: "/about",
+  },
+];
 
 const NavItems = () => {
   return (

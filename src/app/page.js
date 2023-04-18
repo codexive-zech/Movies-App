@@ -1,10 +1,6 @@
-import { Navbar, Movies, MoviesResults } from "./components";
-
-const API_KEY = process.env.API_KEY;
+import { Navbar, Movies } from "@/components";
 
 export default function Home() {
-  
-
   return (
     <>
       {/* Navbar */}

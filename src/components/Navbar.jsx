@@ -2,14 +2,26 @@
 import Link from "next/link";
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import { navLinks } from "../../../utils/data";
+
+const navLinks = [
+  {
+    id: 1,
+    title: "Trending",
+    paramUrl: "fetchTrending",
+  },
+  {
+    id: 2,
+    title: "Top Rated",
+    paramUrl: "fetchTopRated",
+  },
+];
 
 const Navbar = () => {
   const searchParam = useSearchParams();
   const genre = searchParam.get("genre");
   return (
     <>
-      <div className="flex items-center justify-center space-x-8 bg-amber-100 dark:bg-gray-600 p-4 my-4">
+      <div className="flex items-center justify-center space-x-8 bg-gray-600 p-4 my-4">
         {navLinks.map((link) => {
           const { id, title, paramUrl } = link;
           return (
