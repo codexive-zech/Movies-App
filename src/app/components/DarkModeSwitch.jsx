@@ -16,18 +16,31 @@ const DarkModeSwitch = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <>
-      {mounted &&
-        (currentTheme === "dark" ? (
-          <MdLightMode
-            className="dark-mode-toggle"
-            onClick={() => setTheme("light")}
-          />
-        ) : (
-          <BsFillMoonFill
-            className="dark-mode-toggle"
-            onClick={() => setTheme("dark")}
-          />
-        ))}
+      <div className=" bg-green-700">
+        {mounted &&
+          (currentTheme === "dark" ? (
+            <MdLightMode
+              className="dark-mode-toggle"
+              onClick={() => setTheme("light")}
+            />
+          ) : (
+            <BsFillMoonFill
+              className="dark-mode-toggle"
+              onClick={() => setTheme("dark")}
+            />
+          ))}
+      </div>
+      {/* {currentTheme === "dark" ? (
+        <MdLightMode
+          className="dark-mode-toggle"
+          onClick={() => setTheme("light")}
+        />
+      ) : (
+        <BsFillMoonFill
+          className="dark-mode-toggle"
+          onClick={() => setTheme("dark")}
+        />
+      )} */}
     </>
   );
 };

@@ -1,11 +1,16 @@
-import { Navbar } from "./components";
+import { Navbar, Movies, MoviesResults } from "./components";
+
+const API_KEY = process.env.API_KEY;
 
 export default function Home() {
+  
+
   return (
     <>
       {/* Navbar */}
       <Navbar />
-      <main className="text-2xl">Home Page</main>
+      {/*Fetching List of Movies*/}
+      <Movies />
     </>
   );
 }
