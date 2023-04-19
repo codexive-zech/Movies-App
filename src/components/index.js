@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import FetchMovies from "./FetchMovies";
 import Movies from "./Movies.jsx";
 import MoviesResults from "./MoviesResults";
+import Card from "./Card";
+
 export {
   Header,
   NavItems,
@@ -15,4 +17,5 @@ export {
   FetchMovies,
   Movies,
   MoviesResults,
+  Card,
 };
