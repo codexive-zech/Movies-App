@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiThumbsUp } from "react-icons/fi";
-import { Loading } from ".";
 
 const Card = ({ movie }) => {
   return (
